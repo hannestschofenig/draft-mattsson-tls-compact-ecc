@@ -186,9 +186,10 @@ Table of Contents
 3.2.  Implementation Considerations for Compact Representation
 
    For compatibility with APIs a compressed y-coordinate might be
-   required.  For validation or for compatibility with APIs that do not
-   support the full [SECG] format an uncompressed y-coordinate might be
-   required (using the notation in [SECG]):
+   required.  For compatibility with APIs that do not support the full
+   [SECG] format an uncompressed y-coordinate might be required.  For
+   point validation an uncompressed y-coordinate is required.  Using the
+   notation in [SECG]:
 
    *  If a compressed y-coordinate is required, then the value ~yp set
       to zero can be used.  The compact representation described above
